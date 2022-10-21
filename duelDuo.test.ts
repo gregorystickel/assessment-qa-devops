@@ -23,7 +23,7 @@ test('Draw button displays the div with id=choices', async () => {
     let clickDraw = await driver.findElement(By.id('draw'))
     let displayDiv = await driver.findElement(By.id('choices'))
     await clickDraw.click()
-    expect displayDiv.
+    
 
-    await (driver) 
+     
 })

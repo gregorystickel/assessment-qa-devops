@@ -12,8 +12,14 @@ describe('shuffleArray should', () => {
 
     test('shuffle array has been called', () => {
         
-        shuffleArray([35, 40, 41, 42]);
+        
         expect(shuffleArray).toHaveBeenCalled();
-    })    
+    })
     
-})
+    test('copies a new array', () => {
+        let arr = [1, 2, 3]
+        expect(shuffleArray(arr)).toBeTruthy
+    })  
+        
+    })
+    
