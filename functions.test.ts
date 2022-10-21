@@ -4,22 +4,24 @@ describe('shuffleArray should', () => {
     test('Does shuffle array receive an array', () => {
         let arr = [35, 40, 41, 42];
         expect(shuffleArray(arr)).toEqual(expect.arrayContaining(arr))
+        //console.log(shuffleArray(arr));
     })
 
     test('Does shuffle array return an array', () => {
-        expect(shuffleArray([35, 40, 41, 42]).toEqual([35, 40, 41, 42]))
+        let arr = [35, 40, 41, 42];
+        expect(shuffleArray(arr)).toEqual(expect.arrayContaining([35, 40, 41, 42]))
     })
 
-    test('shuffle array has been called', () => {
+    // test('shuffle array has been called', () => {
         
         
-        expect(shuffleArray).toHaveBeenCalled();
-    })
+    //     expect(shuffleArray).toHaveBeenCalled();
+    // })
     
-    test('copies a new array', () => {
-        let arr = [1, 2, 3]
-        expect(shuffleArray(arr)).toBeTruthy
-    })  
+    // test('copies a new array', () => {
+    //     let arr = [1, 2, 3]
+    //     expect(shuffleArray(arr)).toBeTruthy
+    // })  
         
-    })
+ })
     
